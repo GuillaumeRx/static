@@ -13,10 +13,29 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/background.jpg');
 	width: 100vw;
 	height: 100vh;
 	background-position:center top;
+}
+
+section #1 {
+	/* Dans le url tu peux changer l'image de fond*/
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/background.jpg');
+}
+
+section #2 {
+	/* Dans le url tu peux changer l'image de fond*/
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/background.jpg');
+}
+
+section #3 {
+	/* Dans le url tu peux changer l'image de fond*/
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/background.jpg');
+}
+
+section #4 {
+	/* Dans le url tu peux changer l'image de fond*/
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/background.jpg');
 }
 
 section > div {
