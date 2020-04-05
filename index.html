@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="slide.css" />
+	<link rel="stylesheet" href="style.css" />
+	<script
+  		src="https://code.jquery.com/jquery-3.4.1.min.js"
+  		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  		crossorigin="anonymous"></script>
+	<script src="slide.js"></script>
+	<script src="script.js"></script>
+	<script src="https://unpkg.com/feather-icons"></script>
+	<title>Juliette</title>
+</head>
+<body>
+	<div class="main">
+		<section>
+			<div>
+				<div>
+					<h2>Bonjour</h2>
+					<div class="separator"></div>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores mollitia illo maiores, ab blanditiis sapiente obcaecati, esse, doloremque illum quod molestias atque labore amet. Quas iste voluptatem harum aut nemo.</p>
+				</div>
+				<div>
+					<img class="pic" src="img/picture.jpg"/>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div>
+				<div>
+					<h2>Salut</h2>
+					<div class="separator"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam incidunt, ea amet tempora natus modi deserunt sapiente ut, nobis aut repudiandae? Est dicta veniam aspernatur perferendis illo. Rerum, repellat laboriosam!</p>
+				</div>
+				<div>
+					<img class="pic" src="img/picture.jpg"/>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div>
+				<div>
+					<h2>Hola</h2>
+					<div class="separator"></div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione officiis, distinctio consequuntur, ipsa dolorum maiores consequatur delectus aut praesentium sit, at a incidunt quae labore dicta totam quo et deleniti.</p>
+				</div>
+				<div>
+					<img class="pic" src="img/picture.jpg"/>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div>
+				<div>
+					<h2>Hello</h2>
+					<div class="separator"></div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eligendi ipsa quia quidem atque facere iste, corporis quasi non vel dolorum numquam fugiat dignissimos laborum nobis repellat obcaecati tenetur placeat?</p>
+				</div>
+				<div>
+					<img class="pic" src="img/picture.jpg"/>
+				</div>
+			</div>
+		</section>
+	</div>
+	<img class="logo" src="img/logo.png"/>
+	<a id="show" class="about">about</a>
+	<div class="nav">
+		<a onclick="moveUp('.main')"><i data-feather="chevron-left" width="50" height="50"></i></a>
+		<a onclick="moveDown('.main')"><i data-feather="chevron-right" width="50" height="50"></i></a>
+	</div>
+	<div id="about">
+		<a id="hide"><i data-feather="x" width="25" height="25"></i></a>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem placeat magni blanditiis enim nisi sint! Magnam voluptates recusandae, voluptate non impedit ipsum quia illum dignissimos repellendus, sed expedita? Ad, iste.
+		Illo sequi ab veniam nisi quasi eaque dignissimos, magnam sit eligendi inventore ipsum corrupti totam doloribus sint aliquam expedita voluptatibus optio placeat? Magni, harum adipisci molestiae in corrupti fugiat eius.
+		Provident neque eaque est expedita harum asperiores? Consequatur obcaecati ullam aperiam necessitatibus, magnam impedit, maiores eveniet porro similique dolorem molestiae architecto reprehenderit, doloremque quibusdam iusto exercitationem dolores sapiente nostrum tempore.</p>
+	</div>
+	<script>
+		onePageScroll(".main", {
+			sectionContainer: "section",
+			easing: "ease-in-out",
+			animationTime: 1000,
+			pagination: true,
+			updateURL: true,
+			loop: false,
+			keyboard: true,
+			responsiveFallback: false
+		});
+  		feather.replace();
+	</script>
+</body>
+</html>
