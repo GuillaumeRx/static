@@ -120,4 +120,16 @@ section > div > div h2 {
 		top: 45px;
 		right: 5px;
 	}
+
+	section > div > div h2 {
+		font-size: 50px;
+		margin-bottom: 10px;
+	}
+	
+	.logo {
+		position: absolute;
+		left: 11%;
+		top: 2.5%;
+		width: 50px;
+	}
 }
