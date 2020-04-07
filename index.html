@@ -3,98 +3,164 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" />
 	<link rel="stylesheet" href="slide.css" />
 	<link rel="stylesheet" href="style.css" />
 	<script
   		src="https://code.jquery.com/jquery-3.4.1.min.js"
   		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  		crossorigin="anonymous"></script>
-	<script src="slide.js"></script>
+		  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"></script>
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/feather-icons"></script>
-	<title>Juliette</title>
+	<title>Rendu</title>
 </head>
 <body>
-	<div class="main">
-		<!-- Chaque section represente une page -->
-		<!-- Pour changer le fond c'est dans style.css, en dessous de la ligne de commentaire -->
-		<section id="first">
-			<div>
-				<div>
-					<!-- Ici c'est le titre de la section -->
-					<h2>Bonjour</h2>
-					<div class="separator"></div>
-					<!-- Ici tu peux changer les paragraphes a cote de chaque photo -->
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores mollitia illo maiores, ab blanditiis sapiente obcaecati, esse, doloremque illum quod molestias atque labore amet. Quas iste voluptatem harum aut nemo.</p>
-				</div>
-				<div>
-					<!-- met tes photos dans le dossier img et met son nom apres le "img/" -->
-					<img class="pic" src="img/picture.jpg"/>
-				</div>
-			</div>
-		</section>
-		<section id="second">
-			<div>
-				<div>
-					<h2>Salut</h2>
-					<div class="separator"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam incidunt, ea amet tempora natus modi deserunt sapiente ut, nobis aut repudiandae? Est dicta veniam aspernatur perferendis illo. Rerum, repellat laboriosam!</p>
-				</div>
-				<div>
-					<img class="pic" src="img/picture.jpg"/>
-				</div>
-			</div>
-		</section>
-		<section id="third">
-			<div>
-				<div>
-					<h2>Hola</h2>
-					<div class="separator"></div>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione officiis, distinctio consequuntur, ipsa dolorum maiores consequatur delectus aut praesentium sit, at a incidunt quae labore dicta totam quo et deleniti.</p>
-				</div>
-				<div>
-					<img class="pic" src="img/picture.jpg"/>
-				</div>
-			</div>
-		</section>
-		<section id="fourth">
-			<div>
-				<div>
-					<h2>Hello</h2>
-					<div class="separator"></div>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eligendi ipsa quia quidem atque facere iste, corporis quasi non vel dolorum numquam fugiat dignissimos laborum nobis repellat obcaecati tenetur placeat?</p>
-				</div>
-				<div>
-					<img class="pic" src="img/picture.jpg"/>
-				</div>
-			</div>
-		</section>
-	</div>
 	<img class="logo" src="img/logo.png"/>
+	<a class="nav-up" onclick="fullpage_api.moveSectionUp();"><img src="img/triangle.svg" width="77px"/></a>
+	<a class="nav-down" onclick="fullpage_api.moveSectionDown();"><img src="img/triangle.svg" width="77px"/></a>
 	<a id="show" class="about">about</a>
-	<div class="nav">
-		<a onclick="moveUp('.main')"><i data-feather="chevron-left" width="50" height="50"></i></a>
-		<a onclick="moveDown('.main')"><i data-feather="chevron-right" width="50" height="50"></i></a>
+	<div id="fullpage">
+		<div class="section" id="first">
+			<div class="slide intro">
+				<div>
+					<h2>Emotions</h2>
+					<div class="separator"></div>
+					<div class="invitor">
+						<p>Cliquez à droite pour voir le projet</p><i data-feather="arrow-right" width="30" height="30" stroke="#9E005D"></i>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<img class="pic" src="img/IMG_2535.jpg"/>
+			</div>
+			<div class="slide">
+				<img class="pic" src="img/IMG_2534.jpg"/>
+			</div>
+			<div class="slide">
+				<img class="pic" src="img/IMG_2532.jpg"/>
+			</div>
+		</div>
+		<div class="section" id="second">
+			<div class="slide">
+				<div>
+					<h2>Gestuelle</h2>
+					<div class="separator"></div>
+					<div class="invitor">
+						<p>Cliquez à droite pour voir le projet</p><i data-feather="arrow-right" width="30" height="30" stroke="#9E005D"></i>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="slide">
+					<img class="pic" src="img/cligne_des_yeux copie.jpg"/>
+					<div class="countdown">
+						<p id="compteur1">1 </p>
+						<p> &nbsp;cligner des yeux</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="pic" src="img/sourire.jpg"/>
+					<div class="countdown">
+						<p id="compteur2">1 </p>
+						<p> &nbsp;sourire</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="pic" src="img/mord_les_levres copie.jpg"/>
+					<div class="countdown">
+						<p id="compteur3">1 </p>
+						<p> &nbsp;mordiller mes lèvres</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="pic" src="img/rire.jpg"/>
+					<div class="countdown">
+						<p>1</p>
+						<p> &nbsp;rire</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="pic" src="img/fronce_les_sourcils copie.jpg"/>
+					<div class="countdown">
+						<p id="compteur4">1 </p>
+						<p> &nbsp;froncer les sourcils</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="pic" src="img/inspirer copie.jpg"/>
+					<div class="countdown">
+						<p id="compteur5">1 </p>
+						<p> &nbsp;inspirer</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="pic" src="img/pleurer copie.jpg"/>
+					<div class="countdown">
+						<p id="compteur6">1 </p>
+						<p> &nbsp;pleurer</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="pic" src="img/remet_lunettes copie.jpg"/>
+					<div class="countdown">
+						<p>1 </p>
+						<p> &nbsp;remettre mes lunettes</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="pic" src="img/ronge_les_ongles copie.jpg"/>
+					<div class="countdown">
+						<p id="compteur7">1 </p>
+						<P> &nbsp;ronger mes ongles</P>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="third">
+			<div class="slide">
+					<div>
+						<h2>Espace</h2>
+						<div class="separator"></div>
+						<div class="invitor">
+							<p>Cliquez à droite pour voir le projet</p><i data-feather="arrow-right" width="30" height="30" stroke="#9E005D"></i>
+						</div>
+					</div>
+			</div>
+			<div  class="slide">
+				<img class="pic" src="img/tissus.jpg"/>
+			</div>
+			<div class="slide">
+				<img class="pic" src="img/tissus2.jpg"/>
+			</div>
+			<div class="slide">
+				<img class="pic" src="img/tissus3.jpg"/>
+			</div>
+		</div>
 	</div>
 	<div id="about">
 		<a id="hide"><i data-feather="x" width="25" height="25"></i></a>
 		<!-- Ici tu peux changer le texte a l'interieur de la page about -->
-		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem placeat magni blanditiis enim nisi sint! Magnam voluptates recusandae, voluptate non impedit ipsum quia illum dignissimos repellendus, sed expedita? Ad, iste.
-		Illo sequi ab veniam nisi quasi eaque dignissimos, magnam sit eligendi inventore ipsum corrupti totam doloribus sint aliquam expedita voluptatibus optio placeat? Magni, harum adipisci molestiae in corrupti fugiat eius.
-		Provident neque eaque est expedita harum asperiores? Consequatur obcaecati ullam aperiam necessitatibus, magnam impedit, maiores eveniet porro similique dolorem molestiae architecto reprehenderit, doloremque quibusdam iusto exercitationem dolores sapiente nostrum tempore.</p>
+		<p>Réponse à l'épreuve de création à domicile. Candidat n° 2020/1/2333</p>
 	</div>
 	<script>
-		onePageScroll(".main", {
-			sectionContainer: "section",
-			easing: "ease-in-out",
-			animationTime: 1000,
-			pagination: true,
-			updateURL: true,
-			loop: false,
-			keyboard: true,
-			responsiveFallback: false
-		});
-  		feather.replace();
+	new fullpage('#fullpage', {
+	licenseKey: "22862309-4191456A-8FEA0994-CA7C784F",
+	navigation: true,
+    navigationPosition: 'right',
+	slidesNavigation: true,
+	slidesNavPosition: 'bottom',
+	autoScrolling: true,
+	scrollHorizontally: true,
+	controlArrows: true,
+	css3: true,
+	loopHorizontal: false,
+	anchors:['emotions', 'gestuelle', 'espace'],
+	lockAnchors: false
+	});
+	feather.replace();
 	</script>
 </body>
 </html>
